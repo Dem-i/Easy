@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref="stylessheet" href="styles.css">
+    <h1 id="title">Survey</h1>
+  </head>
+  <body> 
+    <p id="description">We appreciate you taking the time to fill out this survey!</p>  
+    <form id="survey-form" required>
+    <fieldset>
+      <legend>User info</legend>
+     <label for="name" id="name-label">Enter your full name: <input id="name" name="name" type="text" placeholder="First and last name" required></label>
+     <label for="email" id="email-label" >Enter your email: <input id="email" type="email" placeholder="email" required></label><label for="number" id="number-label">Enter your age: <input id="number" type="number" min="18" max="99" placeholder="age" required></label>
+    </fieldset>
+    <fieldset><legend>How did you hear about us?</legend>
+      <label for="dropdown">Select:</label>
+        <select id="dropdown">
+        <option>(select)</option>
+        <option>Google</option>
+        <option>Reddit</option>
+        <option>Twitter</option>
+        <option>Emplyee Referral</option>
+        <option>Other</option> 
+        </select>
+    </fieldset>
+    <fieldset><legend>Are you satisfied with your experience?</legend>
+      <label for="yes"><input id="yes" type="radio" name="yes/no" value="yes" checked> Yes</label>
+      <div></div>
+      <label for="no"><input id="no" type="radio" name="yes/no" value="no" > No</label>
+    </fieldset>
+    <fieldset>
+      <legend>What did you like about us?</legend>
+      <label for=" good-communication"><input id="good-communication" type="checkbox" name="good-communication" value="checked"> Good Communication</label>
+      <label for="great-reliability"><input id="great-reliability" type="checkbox" name="great-reliability" value="checked" > Great Reliability</label><label for="hospitality"><input id="hospitality" type="checkbox" name="hospitality" value="checked"> Hospitality</label>
+      <label for="consistency"><input id="consistency" type="checkbox" name="consistency" value="checked"> Consistency</label><label for="professionalism"><input id="professionalism" type="checkbox" name="professionalism" value="checked"> Professionalism</label><label for="patience"><input id="patience" type="checkbox" name="patience" value="checked"> Patience</label><label for="ease-of-service"><input id="ease-of-service" type="checkbox" name="ease-of-service" value="checked"> Ease of service</label>
+    </fieldset>
+    <fieldset>
+      <legend>Any bad qualities you feel we should be aware of?</legend>
+      <label for="poor-customer-service"><input id="poor-customer-service" type="checkbox" name="poor-customer-service" value="checked"> Poor Customer Service</label>
+      <label for="unethical-behavior"><input id="unethical-behavior" type="checkbox" name="unethical-behavior" value="checked" > Unethical Behavior</label><label for="disgruntled-employees"><input id="disgruntled-employees" type="checkbox" name="disgruntled-employees" value="checked"> Disgruntled Employees</label>
+      <label for="poor-quality-products"><input id="poor-quality-products" type="checkbox" name="poor-quality-products" value="checked"> Poor quality products</label>
+    </fieldset> 
+    <fieldset><legend>Feel free to add a comment about anything we missed.</legend>
+    <textarea placeholder="Start typing..."></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
